@@ -3,7 +3,6 @@
 This is the official PyTorch implementation of the paper **"EDeF-Net: Spatio-temporal Association Network for Flicker Removal in Event Streams"** (ACM MM 2025).
 
 [[Paper link]](https://pub-e7bc7e5ed67b401a8e9e587c3dee22b6.r2.dev/publications/2025/Han_MM25.pdf)
-[[Supp link]](https://pub-e7bc7e5ed67b401a8e9e587c3dee22b6.r2.dev/publications/2025/Han_MM25.pdf)
 
 ---
 
