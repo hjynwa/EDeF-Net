@@ -108,7 +108,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--input_dir', dest='input_dir', required=True, type=str, help='name of input txt directory')
     parser.add_argument('-o', '--output_dir', dest='output_dir', required=True, type=str, help='name of output txt directory')
-    parser.add_argument('--interval', dest='interval', default=10000,  type=int, help='interval to split events stream')
+    parser.add_argument('--interval', dest='interval', default=10000,  type=int, help='the time duration of each event stack')
     parser.add_argument('--start_time', dest='start_time', type=int, default=0, help='start time of events stream')
     parser.add_argument('--end_time', dest='end_time', type=int, default=100000, help='end time of events stream')
     parser.add_argument('--height', dest='height', type=int, default=360, help='height of the event stack')
