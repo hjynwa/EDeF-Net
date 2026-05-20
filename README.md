@@ -61,7 +61,7 @@ pip install -r requirements.txt
 - To test on synthetic dataset using a pretrained model:
 
   ```bash
-  python test.py --config configs/config.json --resume checkpoint-epoch60.pth
+  python test.py --config configs/config.json --resume ckpt/checkpoint-epoch60.pth
   ```
 
 ### 4. Inference on Real Data Samples
@@ -74,7 +74,7 @@ pip install -r requirements.txt
 - Run inference on flicker event stacks using a pretrained model:
 
   ```bash
-  python infer.py --config configs/config.json --resume checkpoint-epoch60.pth --data_dir realdata_samples/realdata_flower/evs_stack
+  python infer.py --config configs/config.json --resume ckpt/checkpoint-epoch60.pth --data_dir realdata_samples/realdata_flower/evs_stack
   ```
 
 ---
