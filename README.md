@@ -65,7 +65,7 @@ pip install -r requirements.txt
   ```
 
 ### 4. Inference on Real Data Samples
-- Convert event streams from ```.csv``` (or ```.raw``` / ```.txt```) to  event stack ```.npy``` format:
+- Split and convert event streams file from ```.csv``` (or ```.raw``` / ```.txt```) to sequence of event stacks in the format of ```.npy```:
 
   ```bash
   python scripts/split_realdata.py --input_dir realdata_samples/realdata_flower/streams --output_dir realdata_samples/realdata_flower/evs_stack --interval 10000
