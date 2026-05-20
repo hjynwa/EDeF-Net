@@ -65,10 +65,10 @@ pip install -r requirements.txt
   ```
 
 ### 4. Inference on Real Data Samples
-- Split and convert event streams file from ```.csv``` (or ```.raw``` / ```.txt```) to sequence of event stacks in the format of ```.npy```:
+- Split and convert event streams file from ```.csv``` (or ```.raw``` / ```.txt```) to sequence of event stacks in the format of ```.npy```. You can optionally extract part of the event streams by setting the ```--start_time``` and ```--end_time```. 
 
   ```bash
-  python scripts/split_realdata.py --input_dir realdata_samples/realdata_flower/streams --output_dir realdata_samples/realdata_flower/evs_stack --interval 10000
+  python scripts/split_realdata.py --input_dir realdata_samples/realdata_flower/streams --output_dir realdata_samples/realdata_flower/evs_stack --start_time START_TIMESTAMP --end_time END_TIMESTAMP --height 360 --width 640
   ```
 
 - Run inference on flicker event stacks using a pretrained model:
