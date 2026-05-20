@@ -8,6 +8,8 @@ This is the official PyTorch implementation of the paper **"EDeF-Net: Spatio-tem
 
 ## 📌 Overview
 
+![Teaser](assets/Teaser.png)
+
 Event cameras with bio-inspired neuromorphic sensors are highly sensitive to brightness changes. When there are moving objects in a scene under constant lighting, event cameras only record motion information and output a sequence of events asynchronously. However, the common flickering light sources, such as fluorescent or LED lamps powered by alternating current exist in various realworld scenarios. When operating under a flickering light source, event cameras output numerous redundant event signals that are triggered by the flickering effect, which overwhelm the useful signals that encode motion information. In this paper, we propose EDeF-Net, an Event streams DeFlickering Network that effectively leverages the spatio-temporal correlation of event streams by modeling both the inter-channel temporal attention and inter-patch spatial attention. To facilitate network training and evaluation, we synthesize the first dataset containing paired flickering and flickerfree event streams. Moreover, we demonstrate that event streams f iltered by EDeF-Net yield performance improvements on downstream applications such as event-based optical flow estimation and object tracking.
 
 ---
@@ -46,7 +48,7 @@ pip install -r requirements.txt
 
 - Download the synthetic dataset from [here](https://1drv.ms/u/c/9b45f60419226149/IQDowI9iboHcRr15G0SnzO77AVLW6kb7dg5nafJcw87GvX0) and put it to ```./dataset```.
 
-- Download the real data samples from [here](https://github.com/hjynwa/EDeF-Net).
+- Download the real data samples from [here](https://1drv.ms/f/c/9b45f60419226149/IgDdJkjQp7A-RIs6cwkXZUDoAeu7Og6kEQ9ePdcz3XsCYpc?e=emeeY1).
 
 ### 2. Training
 
@@ -81,7 +83,10 @@ pip install -r requirements.txt
 
 ## 🖼️ Results
 
-- Download the results of [Synthetic testset](https://github.com/hjynwa/EDeF-Net) and [Real data samples](https://github.com/hjynwa/EDeF-Net).
+- Visualization of flicker removal results on real event streams.
+![Results](assets/Results.png)
+
+- Download the results of [Synthetic testset](https://1drv.ms/f/c/9b45f60419226149/IgDufiJDcaq1QoRVhIX1CoQNAefa9oo5_-D2yo4ZxmmVgH4?e=CmENYH) and [Real data samples](https://1drv.ms/f/c/9b45f60419226149/IgB8jzc66cs8TavziT-vijAfARrZ0vOzn7OZMkAalKRc03I?e=wWqTHp).
 
 ---
 
