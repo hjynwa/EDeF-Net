@@ -69,7 +69,7 @@ pip install -r requirements.txt
 - Convert event streams from ```.csv``` (or ```.raw```/ ```.txt```) to  event stack ```.npy``` format:
 
   ```bash
-  python scripts/split_realdata.py --input_dir realdata_samples/realdata_flower --output_dir realdata_samples/realdata_flower/evs_stack --interval 10000
+  python scripts/split_realdata.py --input_dir realdata_samples/realdata_flower/streams --output_dir realdata_samples/realdata_flower/evs_stack --interval 10000
   ```
 
 - Run inference on flicker event stacks using a pretrained model:
